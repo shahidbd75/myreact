@@ -25,5 +25,6 @@
     "javascript": "javascriptreact"
   },
   "editor.fontFamily": "'Fira Code', 'Courier New', monospace",
-  "editor.fontLigatures": true
+  "editor.fontLigatures": true,
+  "editor.cursorBlinking": "expand"
 }
