@@ -1,10 +1,13 @@
 import React from 'react';
 
-const HoverCounter = ({ count, incrementCount }) => (
-    <h1 type="button" onMouseOver={incrementCount}>
-        Hover {count} Times
-    </h1>
-);
+const HoverCounter = ({ count, incrementCount, theme }) => {
+    const style = theme === 'dark' ? { backgroundColor: '#000', color: '#FFF' } : null;
+    return (
+        <h1 style={style} onMouseOver={incrementCount}>
+            Hover {count} Times
+        </h1>
+    );
+};
 
 export default HoverCounter;
 
