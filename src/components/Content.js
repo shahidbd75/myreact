@@ -9,8 +9,13 @@ const Content = () => (
         <Counter>
             {(count, incrementCount) => (
                 <ThemeContext.Consumer>
-                    {({ theme }) => (
-                        <HoverCounter count={count} incrementCount={incrementCount} theme={theme} />
+                    {({ theme, switchTheme }) => (
+                        <HoverCounter
+                            count={count}
+                            incrementCount={incrementCount}
+                            theme={theme}
+                            switchTheme={switchTheme}
+                        />
                     )}
                 </ThemeContext.Consumer>
             )}
